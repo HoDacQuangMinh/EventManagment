@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Event Manager</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Event Manager</h1>
+  </header>
+
+  <main class="container">
+    <!-- Create Event -->
+    <section class="card">
+      <h2>Create Event</h2>
+      <input type="text" id="title" placeholder="Event Title" />
+      <input type="datetime-local" id="date" />
+      <textarea id="description" placeholder="Event Description"></textarea>
+      <button onclick="createEvent()">Create Event</button>
+    </section>
+
+    <!-- Events List -->
+    <section class="card">
+      <h2>Upcoming Events</h2>
+      <div id="eventList"></div>
+    </section>
+
+    <!-- Discussion -->
+    <section class="card">
+      <h2>Discussion Board</h2>
+      <textarea id="discussionInput" placeholder="Type your comment..."></textarea>
+      <button onclick="postComment()">Post Comment</button>
+      <div id="discussionBoard"></div>
+    </section>
+
+    <!-- Notifications -->
+    <section class="card">
+      <h2>Notifications</h2>
+      <div id="notifications"></div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
